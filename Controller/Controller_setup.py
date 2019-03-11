@@ -82,7 +82,7 @@ while True:
                 ry = test.joystick.get_axis(3)      #if the change in the axis is great enough ry becomes the Y axis of the right joystick
                 print('Right Y is ', test.joystick.get_axis(3))    #testing purposes
                 if 0.25 >= ry >= -0.25:
-                    serxb.write("".encode())
+                    serxb.write("1".encode())
                 elif 0.75 >= ry > 0.25:
                     serxb.write("5".encode())
                 elif ry > 0.75:
